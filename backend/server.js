@@ -21,6 +21,12 @@ connection.once('open', () => {
     console.log('MongoDB connection established')
 });
 
+const seriesRouter = require('./routes/tvseries');
+const usersRouter = require('./routes/users')
+
+app.use('/series', seriesRouter)
+app.use('/users', usersRouter)
+
 app.listen(port, () => {
     console.log(`server is running on port: ${port}`)
 });
