@@ -4,7 +4,7 @@ Using the MERN stack to create an app tracking a user's watched TV series and as
 
 ToDo:
 
-- Update create user to create series (with safeguard for pre-existing series)
+- Update create user to create series (with safeguard for pre-existing series names)
 - Update create series entry to reviews
 - max out stars at 5
 - include table sort
