@@ -35,6 +35,8 @@ export default class EditSeries extends Component {
             date: new Date(res.data.date),
           }
           )
+          console.log(this.state.title)
+          console.log(this.state.stars)
         })
         .catch(err => console.log(err))
 
@@ -138,12 +140,15 @@ onSubmit(e) {
           </div>
           <div className="form-group">
             <label>Stars: </label>
-            <input 
-                type="text" 
-                className="form-control"
-                value={this.state.stars}
-                onChange={this.onChangeStars}
-                />
+            <select className='form-control' value={this.state.stars} 
+            onChange={this.onChangeStars}>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
           </div>
           <div className="form-group">
             <label>Date: </label>

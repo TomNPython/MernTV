@@ -6,6 +6,6 @@ ToDo:
 
 - Update create user to create series (with safeguard for pre-existing series names)
 - Update create series entry to reviews
-- max out stars at 5
+- ~max out stars at 5~
 - include table sort
 - adapt table to show intro but not whole, create separate pages for whole review (inc images?)

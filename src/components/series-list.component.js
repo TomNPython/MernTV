@@ -40,6 +40,7 @@ export default class SeriesList extends Component {
   deleteSeries(id) {
     axios.delete('http://localhost:3000/series/'+id)
         .then(res => console.log(res.data))
+        .catch(err => console.log(err))
 
     this.setState({
       series: this.state.series.filter(el => el._id !== id)

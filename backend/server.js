@@ -13,7 +13,12 @@ app.use(express.json());
 
 const uri = process.env.ATLAS_URI;
 
-mongoose.connect(uri, {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true});
+//downgraded to node 2.12 to establish connection - firewall blocking?
+
+mongoose.connect(uri, {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true}, function(err) {
+    if (err) {console.log(err)}
+});
+
 
 const connection = mongoose.connection;
 

@@ -124,10 +124,14 @@ export default class CreateSeries extends Component {
           </div>
           <div className="form-group">
             <label>Stars:</label>
-            <input type="text" 
-            className='form-control'
-            value={this.state.stars}
-            onChange={this.onChangeStars}/>
+            <select className='form-control' onChange={this.onChangeStars}>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
           </div>
           <div className="form-group">
             <label>Date:</label>
