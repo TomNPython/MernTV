@@ -4,7 +4,9 @@ import axios from 'axios';
 
 const Series = props => (
   <tr>
-    <td>{props.series.username}</td>
+    <td>
+      <Link to={'/series/'+props.series._id} 
+      username={props.series.username}>{props.series.username}</Link></td>
     <td>{props.series.title}</td>
     <td>{props.series.description}</td>
     <td>{props.series.stars}</td>

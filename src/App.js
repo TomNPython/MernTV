@@ -7,6 +7,7 @@ import SeriesList from "./components/series-list.component";
 import EditSeries from "./components/edit-series.component";
 import CreateSeries from "./components/create-series.component";
 import CreateUser from "./components/create-user.component";
+import ShowSeries from "./components/show-series.component"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/edit/:id" component={EditSeries} />
       <Route path="/create" component={CreateSeries} />
       <Route path="/user" component={CreateUser} />
+      <Route path='/series/:id' component={ShowSeries} />
     </Router>
   );
 }

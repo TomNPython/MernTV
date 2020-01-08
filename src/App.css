@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+.series-review {
+  margin: 0 auto;
+  text-align: center;
+}
