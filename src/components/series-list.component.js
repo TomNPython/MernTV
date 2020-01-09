@@ -9,7 +9,7 @@ const Series = props => (
       <Link to={'/series/'+props.series._id} 
       username={props.series.username}>{props.series.username}</Link></td>
     <td>{props.series.title}</td>
-    <td>{props.series.description.substring(0,50)}{props.series.description.length > 40 ? '...' : ''}</td>
+    <td>{props.series.description.substring(0,50)}{props.series.description.length > 50 ? '...' : ''}</td>
     <td>{props.series.stars}</td>
     <td>{props.series.date.split('T')[0]}</td>
     <td>
@@ -61,7 +61,7 @@ export default class SeriesList extends Component {
     return (
       <div>
         <h3>Series Entries:</h3>
-        <table className="table">
+        <table className="table table-striped table-bordered">
           <thead className="thead-dark">
             <tr>
               <th>Username</th>

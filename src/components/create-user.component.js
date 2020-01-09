@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, createElement } from 'react';
 import axios from 'axios';
 
 export default class CreateUser extends Component {
@@ -19,8 +19,10 @@ export default class CreateUser extends Component {
     })
   }
 
+
   onSubmit(e) {
     e.preventDefault()
+
 
     const newUser = {
       username: this.state.username
@@ -29,7 +31,20 @@ export default class CreateUser extends Component {
     console.log(newUser);
 
     axios.post('http://localhost:3000/users/add', newUser)
-            .then(res => console.log(res.data));
+            .then(res => {
+              console.log(res.data)
+              this.setState({
+                success: 'User Created!',
+                errors: ''
+              })
+            })
+            .catch(err => {
+              console.log(err)
+              this.setState({
+                errors: 'Username must be unique & at least 3 characters long.',
+                success: ''
+              })
+            })
 
     this.setState({
       username: ''
@@ -53,6 +68,8 @@ export default class CreateUser extends Component {
             <input type="submit" value='Create User' className='btn btn-primary'/>
           </div>
         </form>
+        <p className='badge badge-danger'>{this.state.errors}</p>
+        <p className='badge badge-success'>{this.state.success}</p>
       </div>
     )
   }
