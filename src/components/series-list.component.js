@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import '../App.css';
 
 const Series = props => (
   <tr>
@@ -8,9 +9,9 @@ const Series = props => (
       <Link to={'/series/'+props.series._id} 
       username={props.series.username}>{props.series.username}</Link></td>
     <td>{props.series.title}</td>
-    <td>{props.series.description}</td>
+    <td>{props.series.description.substring(0,50)}{props.series.description.length > 40 ? '...' : ''}</td>
     <td>{props.series.stars}</td>
-    <td>{props.series.date}</td>
+    <td>{props.series.date.split('T')[0]}</td>
     <td>
       <Link to={'/edit/'+props.series._id}>edit</Link> | <a href="#" 
       onClick={() => {props.deleteSeries(props.series._id)}}>delete</a>
@@ -61,7 +62,7 @@ export default class SeriesList extends Component {
       <div>
         <h3>Series Entries:</h3>
         <table className="table">
-          <thead className="thead-light">
+          <thead className="thead-dark">
             <tr>
               <th>Username</th>
               <th>Title</th>

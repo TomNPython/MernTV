@@ -41,3 +41,12 @@
   margin: 0 auto;
   text-align: center;
 }
+
+tr:hover {
+  background-color: rgb(158, 167, 209);
+  color: white
+}
+
+table td {
+  max-width: 200px;
+}
