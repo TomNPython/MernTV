@@ -131,7 +131,7 @@ onSubmit(e) {
           </div>
           <div className="form-group"> 
             <label>Description: </label>
-            <input  type="text"
+            <textarea  rows="5"
                 required
                 className="form-control"
                 value={this.state.description}

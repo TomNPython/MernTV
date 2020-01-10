@@ -1,3 +1,8 @@
+body {
+  background-color: rgb(250, 188, 164);
+  color: #282c34
+}
+
 .App {
   text-align: center;
 }
@@ -37,13 +42,20 @@
   }
 }
 
-.series-review {
-  margin: 0 auto;
-  text-align: center;
+#root {
+  background-color: rgb(250, 188, 164);
 }
 
+.series-review {
+  margin: 10px;
+  text-align: start
+}
 
+.form-group {
+  margin: 20px
+}
 
 table td {
   max-width: 200px;
+  text-align: center;
 }

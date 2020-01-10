@@ -10,7 +10,6 @@ export default class ShowSeries extends Component {
                 username: ''
             }
             console.log(this.state.username)
-            console.log('hi')
         }
 
         componentDidMount() {
@@ -24,8 +23,7 @@ export default class ShowSeries extends Component {
                     date: new Date(res.data.date),
                   }
                   )
-                  console.log(this.state.title)
-                  console.log(this.state.stars)
+                  
                 })
                 .catch(err => console.log(err))
             }

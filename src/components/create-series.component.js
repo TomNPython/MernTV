@@ -117,7 +117,7 @@ export default class CreateSeries extends Component {
           </div>
           <div className="form-group">
             <label>Description:</label>
-            <input type="text" 
+            <textarea rows='5'
             className='form-control'
             value={this.state.description}
             onChange={this.onChangeDescription}/>
