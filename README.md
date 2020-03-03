@@ -10,3 +10,4 @@ ToDo:
 - include table sort
 - ~add description view pages~
 - ~adapt table to show intro but not whole, create separate pages for whole review (inc images?)~
+- change all localhost to host site links
