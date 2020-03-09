@@ -6,7 +6,7 @@ import axios from 'axios'
 export default class CreateSeries extends Component {
   constructor(props) {
     super(props);
-
+    
     this.state = {
       username: '', 
       title: '', 

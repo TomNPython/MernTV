@@ -3,18 +3,22 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import '../App.css';
 
+
+
 const Series = props => (
   
   <tr>
     <td>
-      <Link to={'/series/'+props.series._id} 
-      username={props.series.username}>{props.series.username}</Link></td>
+      <strong>{props.series.username}</strong></td>
     <td>{props.series.title}</td>
-    <td>{props.series.description.substring(0,50)}{props.series.description.length > 50 ? '...' : ''}</td>
-    <td style={{color:'rgb(182, 132, 56)', fontWeight:'bold'}}>{props.series.stars}</td>
+    <td>
+      {props.series.description.substring(0,50)}{props.series.description.length > 50 ? '...' : ''} 
+      <Link to={'/series/'+props.series._id}>(See More)</Link>
+    </td>
+    <td style={{color:'rgb(182, 132, 56)', fontWeight:'bold'}}>{'*'.repeat(props.series.stars)}</td>
     <td>{props.series.date.split('T')[0]}</td>
     <td>
-      <Link to={'/edit/'+props.series._id}>edit</Link> | <a href="#" 
+      <Link to={'/edit/'+props.series._id}>edit</Link> | <a href="/" 
       onClick={() => {props.deleteSeries(props.series._id)}}>delete</a>
     </td>
   </tr>

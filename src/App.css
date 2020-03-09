@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(248, 206, 190);
+  background-color: rgb(248, 217, 204);
   color: #282c34
 }
 
@@ -58,4 +58,8 @@ body {
 table td {
   max-width: 200px;
   text-align: center;
+}
+
+a {
+  padding: 3px
 }

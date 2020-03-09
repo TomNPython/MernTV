@@ -2,6 +2,8 @@
 
 Using the MERN stack to create an app tracking a user's watched TV series and associated ratings 
 
+![ScreenShot](/src/assets/MernShot.png)
+
 ToDo:
 
 - Update create user to create series (with safeguard for pre-existing series names)
