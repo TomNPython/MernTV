@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/MernTV/static/css/main.bb6138c2.chunk.css",
-    "main.js": "/MernTV/static/js/main.f0bf9265.chunk.js",
-    "main.js.map": "/MernTV/static/js/main.f0bf9265.chunk.js.map",
+    "main.css": "/MernTV/static/css/main.aaf0144b.chunk.css",
+    "main.js": "/MernTV/static/js/main.6cc5297e.chunk.js",
+    "main.js.map": "/MernTV/static/js/main.6cc5297e.chunk.js.map",
     "runtime-main.js": "/MernTV/static/js/runtime-main.b4cf1296.js",
     "runtime-main.js.map": "/MernTV/static/js/runtime-main.b4cf1296.js.map",
     "static/css/2.23be29d4.chunk.css": "/MernTV/static/css/2.23be29d4.chunk.css",
     "static/js/2.3312c176.chunk.js": "/MernTV/static/js/2.3312c176.chunk.js",
     "static/js/2.3312c176.chunk.js.map": "/MernTV/static/js/2.3312c176.chunk.js.map",
     "index.html": "/MernTV/index.html",
-    "precache-manifest.a72c543ab6cefd458b650246289485b7.js": "/MernTV/precache-manifest.a72c543ab6cefd458b650246289485b7.js",
+    "precache-manifest.50031319eb7d5ebdd7c496f1665f45dc.js": "/MernTV/precache-manifest.50031319eb7d5ebdd7c496f1665f45dc.js",
     "service-worker.js": "/MernTV/service-worker.js",
     "static/css/2.23be29d4.chunk.css.map": "/MernTV/static/css/2.23be29d4.chunk.css.map",
-    "static/css/main.bb6138c2.chunk.css.map": "/MernTV/static/css/main.bb6138c2.chunk.css.map",
+    "static/css/main.aaf0144b.chunk.css.map": "/MernTV/static/css/main.aaf0144b.chunk.css.map",
     "static/js/2.3312c176.chunk.js.LICENSE": "/MernTV/static/js/2.3312c176.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.b4cf1296.js",
     "static/css/2.23be29d4.chunk.css",
     "static/js/2.3312c176.chunk.js",
-    "static/css/main.bb6138c2.chunk.css",
-    "static/js/main.f0bf9265.chunk.js"
+    "static/css/main.aaf0144b.chunk.css",
+    "static/js/main.6cc5297e.chunk.js"
   ]
 }
